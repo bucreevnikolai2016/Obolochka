@@ -28,8 +28,8 @@ z-index: 0;
 position: absolute;
 left: 0px;
 top: 0px;
-width: 2248px;
-height: 1265px;
+width: 1366px;
+height: 768px;
 }
 .myButton1 {
 z-index: 90;
@@ -69,8 +69,8 @@ setInterval(function() {
 var shir_ok = window.innerWidth;
 var vis_ok = window.innerHeight
 var img = document.getElementById("img");
-var shir_img = shir_ok * (2248 / 1366);
-var vis_img = shir_img * (1265 / 2248);
+var shir_img = shir_ok * (1366 / 1366);
+var vis_img = shir_img * (768 / 1366);
 img.style.width = shir_img + "px";
 img.style.height = vis_img + "px";
 }, 1000);
