@@ -79,7 +79,7 @@ cursor: pointer;
 	
 <script>
 document.querySelector('#myButton3').addEventListener('click', function(){
-await navigator.clipboard.writeText(document.getElementById("mail").value);
+navigator.clipboard.writeText(document.getElementById("mail").value);
 alert('Почта скопирована в буфер обмена');
 });
 </script>
