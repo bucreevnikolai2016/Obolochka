@@ -23,6 +23,14 @@ html {
 -ms-overflow-style: none;
 scrollbar-width: none;
 }
+.img {
+z-index: 0;
+position: absolute;
+left: 0px;
+top: 0px;
+width: 2248px;
+height: 1265px;
+}
 .myButton1 {
 z-index: 90;
 position: absolute;
@@ -54,7 +62,19 @@ cursor: pointer;
 </head>
 	
 <body>
-<img src="/Obolochka/img.png">
+<img class="img" src="/Obolochka/img.png">
+	
+<script>
+setInterval(function() {
+var shir_ok = window.innerWidth;
+var vis_ok = window.innerHeight
+var podknop = document.getElementById("podknop");
+var shir_podknop = shir_ok * (2248 / 1366);
+var vis_podknop = shir_podknop * (1265 / 2248);
+podknop.style.width = shir_podknop + "px";
+podknop.style.height = vis_podknop + "px";
+}, 2000);
+</script>
   
  </body>	
 	
