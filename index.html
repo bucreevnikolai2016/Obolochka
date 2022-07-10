@@ -62,17 +62,17 @@ cursor: pointer;
 </head>
 	
 <body>
-<img class="img" src="/Obolochka/img.png">
+<img class="img" id="img" src="/Obolochka/img.png">
 	
 <script>
 setInterval(function() {
 var shir_ok = window.innerWidth;
 var vis_ok = window.innerHeight
-var podknop = document.getElementById("podknop");
-var shir_podknop = shir_ok * (2248 / 1366);
-var vis_podknop = shir_podknop * (1265 / 2248);
-podknop.style.width = shir_podknop + "px";
-podknop.style.height = vis_podknop + "px";
+var img = document.getElementById("img");
+var shir_img = shir_ok * (2248 / 1366);
+var vis_img = shir_img * (1265 / 2248);
+img.style.width = shir_img + "px";
+img.style.height = vis_img + "px";
 }, 2000);
 </script>
   
